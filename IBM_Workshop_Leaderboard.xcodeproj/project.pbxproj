@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BAB3F28D2C2AE970007B400A /* IBM_Workshop_LeaderboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB3F28C2C2AE970007B400A /* IBM_Workshop_LeaderboardApp.swift */; };
-		BAB3F28F2C2AE970007B400A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB3F28E2C2AE970007B400A /* ContentView.swift */; };
 		BAB3F2912C2AE970007B400A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB3F2902C2AE970007B400A /* Assets.xcassets */; };
 		BAB3F2942C2AE970007B400A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB3F2932C2AE970007B400A /* Preview Assets.xcassets */; };
+		BAB3F29B2C2B0298007B400A /* LeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB3F29A2C2B0298007B400A /* LeaderboardCell.swift */; };
+		BAB3F2AE2C2C3368007B400A /* big_noodle_titling.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB3F2AC2C2C3368007B400A /* big_noodle_titling.ttf */; };
+		BAB3F2AF2C2C3368007B400A /* big_noodle_titling_oblique.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAB3F2AD2C2C3368007B400A /* big_noodle_titling_oblique.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BAB3F2892C2AE970007B400A /* IBM_Workshop_Leaderboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBM_Workshop_Leaderboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB3F28C2C2AE970007B400A /* IBM_Workshop_LeaderboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBM_Workshop_LeaderboardApp.swift; sourceTree = "<group>"; };
-		BAB3F28E2C2AE970007B400A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAB3F2902C2AE970007B400A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAB3F2932C2AE970007B400A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAB3F29A2C2B0298007B400A /* LeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardCell.swift; sourceTree = "<group>"; };
+		BAB3F2AC2C2C3368007B400A /* big_noodle_titling.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_noodle_titling.ttf; sourceTree = "<group>"; };
+		BAB3F2AD2C2C3368007B400A /* big_noodle_titling_oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_noodle_titling_oblique.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		BAB3F28B2C2AE970007B400A /* IBM_Workshop_Leaderboard */ = {
 			isa = PBXGroup;
 			children = (
+				BAB3F2A12C2C22C9007B400A /* fonts */,
+				BAB3F29A2C2B0298007B400A /* LeaderboardCell.swift */,
 				BAB3F28C2C2AE970007B400A /* IBM_Workshop_LeaderboardApp.swift */,
-				BAB3F28E2C2AE970007B400A /* ContentView.swift */,
 				BAB3F2902C2AE970007B400A /* Assets.xcassets */,
 				BAB3F2922C2AE970007B400A /* Preview Content */,
 			);
@@ -65,6 +70,15 @@
 				BAB3F2932C2AE970007B400A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAB3F2A12C2C22C9007B400A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BAB3F2AD2C2C3368007B400A /* big_noodle_titling_oblique.ttf */,
+				BAB3F2AC2C2C3368007B400A /* big_noodle_titling.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +141,8 @@
 			files = (
 				BAB3F2942C2AE970007B400A /* Preview Assets.xcassets in Resources */,
 				BAB3F2912C2AE970007B400A /* Assets.xcassets in Resources */,
+				BAB3F2AF2C2C3368007B400A /* big_noodle_titling_oblique.ttf in Resources */,
+				BAB3F2AE2C2C3368007B400A /* big_noodle_titling.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAB3F28F2C2AE970007B400A /* ContentView.swift in Sources */,
 				BAB3F28D2C2AE970007B400A /* IBM_Workshop_LeaderboardApp.swift in Sources */,
+				BAB3F29B2C2B0298007B400A /* LeaderboardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +291,7 @@
 				DEVELOPMENT_TEAM = 864CLX8TQT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IBM-Workshop-Leaderboard-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +321,7 @@
 				DEVELOPMENT_TEAM = 864CLX8TQT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "IBM-Workshop-Leaderboard-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

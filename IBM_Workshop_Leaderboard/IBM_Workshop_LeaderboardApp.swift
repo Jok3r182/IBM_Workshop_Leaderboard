@@ -11,7 +11,7 @@ import SwiftUI
 struct IBM_Workshop_LeaderboardApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LeaderboardCell()
         }
     }
 }
